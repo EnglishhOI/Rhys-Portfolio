@@ -1,18 +1,15 @@
 
-//Mobile Navigation Display / Burger Icon animation
-const toggleButton = document.getElementsByClassName('toggleBtn')[0];
-
-toggleButton.addEventListener('click', function() {
+function toggleBurger() {
     const navbarLinks = document.getElementsByClassName('navbarLinks')[0];
     const bars = document.getElementsByClassName('bar');
-
-    navbarLinks.classList.toggle('active');
     bars[0].classList.toggle('barOneClose');
     bars[1].classList.toggle('barTwoClose');
     bars[2].classList.toggle('barThreeClose');
-});
+    navbarLinks.classList.toggle('active');
+}
 
-//to Show when scrolled 300 from top
+
+// to Show when scrolled 300 from top
 
 let scroll1 = window.scrollTop = 0;
 
