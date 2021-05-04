@@ -1,0 +1,10 @@
+.anchor {
+    position: relative;
+    top: -35px;
+    left: 0;
+
+        @include tablet-landscape-up {
+            top: -160px;
+        }
+
+}

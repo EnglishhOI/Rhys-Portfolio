@@ -1,0 +1,69 @@
+//for base Scss
+* {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $grey-200;
+    background-image: radial-gradient(circle, $grey-100 0%, transparent 74%);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    color: $light-100;
+}
+
+main {
+    @include flexbox(center, center, column);
+    section {
+        
+        width: 100%;
+        @include tablet-landscape-up {
+            @include flexbox(normal, center, column);
+            height: 100vh;
+
+        }
+
+        .wrapper{
+            @include flexbox(flex-start, flex-start, column);
+            background: $grey-350;
+            padding: 2rem 4rem;
+            width: 100%;
+            
+            @include tablet-landscape-up {
+            padding: 2rem 10rem;
+            width: 65%;
+            box-shadow: inset 5px 5px 6px 0px $grey-400;
+            margin-bottom: 5rem;
+    
+            border-radius: 10px;
+
+        }
+
+        }
+    }
+
+    #projectSection {
+        .wrapper {
+            background: $grey-400;
+            padding: 1.5rem 0;
+            
+            
+            @include tablet-landscape-up {
+                height: 600px;
+                background: $grey-350;
+                padding: 2rem;
+            }
+            
+        }
+    }
+
+    #contactSection {
+        .wrapper {
+            padding: 6rem 4rem;
+            @include tablet-landscape-up {
+                padding: 2rem 10rem;
+            }
+
+        }
+    }
+}

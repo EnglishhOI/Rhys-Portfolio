@@ -1,0 +1,47 @@
+#aboutSection {
+    hr {
+        display: none;
+
+        @include tablet-landscape-up {
+            width: 64%;
+            height: 2px;
+            color: $primaryGreen;
+            position: relative;
+            top: 0;
+            margin: 0 0 30px 0;
+            border-radius: 50%;
+            opacity: 0.75;
+        }
+    }
+
+    #introduction,
+    #skills {
+        margin-top: 1rem;
+    }
+    
+    #skills {
+        h2 {
+            margin-top: 3rem;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+    
+        }
+    
+        .future {
+            color: $light-200;
+        }
+        
+        .inProgress {
+            color: $light-400;
+        }
+        
+        .future {
+            color: $grey-200;
+        }
+    
+    
+    }
+}
