@@ -1,80 +1,69 @@
-#contactSection {
-
-    h1 {
-        align-self: center;
-        margin: 3rem;
-        text-align: center;
-        line-height: normal;
-        letter-spacing: 0.5rem;
-        border-radius: 0.5rem;  
-    }
-}
 
 #contactForm {
-    @include flexbox(space-between, flex-start, column);
-    margin: 0 auto;
-    width: 95%;
-    
+  @include flexbox(space-between, flex-start, column);
+  margin: 0 auto;
+  width: 95%;
+
+  @include tablet-landscape-up {
+    width: 70%;
+  }
+
+  .nameEmail {
+    @include flexbox(space-between, center, column);
+    width: 100%;
+
     @include tablet-landscape-up {
-        width: 70%;
-
+      flex-direction: row;
+      margin-bottom: 1rem;
     }
-    
-    .nameEmail {
-        @include flexbox (space-between,center, column);
-        width: 100%;
-        
-        @include tablet-landscape-up {
-            flex-direction: row;
-            margin-bottom: 1rem;
-        }
-        .formDivider {
-            display: inline-block;
-            width: 100%;
+    .formDivider {
+      display: inline-block;
+      width: 100%;
 
-            @include tablet-landscape-up {
-                width: 45%;
-            }
-        }
-
+      @include tablet-landscape-up {
+        width: 45%;
+      }
     }
-    input[type="text"],
-    input[type="email"], textarea {
-        @include font(1.6rem, 700, $grey-350);
-        padding: 1rem;
-        width: 100%;
-        margin: 0.5rem auto 1rem;
-        border-radius: 0.5rem;
-        border: none;
-        outline: none;
-    
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    @include font(1.6rem, 700, $grey-350);
+    padding: 1rem;
+    width: 100%;
+    margin: 0.5rem auto 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+
+    &:focus {
+      background-color: $secondaryGreen;
+    }
+  }
+
+  textarea {
+    height: 150px;
+    @include tablet-landscape-up {
+      height: 250px;
+    }
+  }
+
+  button {
+    @include font(2rem, 500, #fff);
+    padding: 1rem;
+    width: 200px;
+    background: $offset;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    margin: 2rem auto;
+    border: none;
+
+    @include tablet-landscape-up {
+      width: 200px;
     }
 
-    textarea {
-        height: 150px;
-        @include tablet-landscape-up {
-            height: 250px;
-
-        }
+    &:hover {
+      background: $offset1;
     }
-
-    button {
-        @include font(2rem, 500, #fff);
-        padding: 1rem;
-        width: 200px;
-        background: $offset;
-        border-radius: 0.5rem;
-        text-transform: uppercase;
-        margin: 2rem auto;
-        border: none;
-
-        @include tablet-landscape-up {
-            width: 200px;
-        }
-
-        &:hover {
-            background: $offset1;
-        }
-
-    }
+  }
 }

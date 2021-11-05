@@ -1,104 +1,47 @@
+.cardContainer {
+  justify-content: space-evenly;
+  height: 100%;
 
-.carousel-item {
-    .img {
-        background-position: top center;
-        background-size: cover;
-        width: 100%;
-        height: 200px;
-        border-radius: 15px;
-
-        @include tablet-landscape-up{
-            width: 50%;
-
-        }
-
-        
-        
-        &#img-1 {
-            background-image: url("../media/projectOne.jpg");
-        }
-        @include tablet-landscape-up {
-            height: 100%;
-            display: inline-block;
-    }
-}
-
-    .containerCarouselItem {
-        background: $grey-400;
-        margin: 0 20px;
-        height: 100%;
-        border-radius: 20px;
-        padding: 15px;
-
-        box-sizing: border-box;
-        
-        @include tablet-landscape-up {
-            padding: 20px 40px;
-
-        }
-
-        .contentBox {
-            display: inline-block;
-            height: 100%;
-            padding: 2px 15px;
-            
-            @include tablet-landscape-up {
-                position: absolute;
-                top: 0;
-                margin-left: 10px;
-                padding: 20px 30px 20px 10px;
-                
-            }
-    
-            a {
-                @include font(1.6rem, 500, #fff);
-                text-decoration: none;
-                margin: 5px;
-                display: inline-block;
-
-                background: $offset;
-                padding: 2px 5px;
-                border-radius: 4px;
-
-                &:hover {
-                    color: $offset;
-                    background: #fff;
-
-                    transition: 0.25s all ease-in-out;
-
-                }
-    
-            }
-            h3 {
-                @include font(1.8rem, 700, $secondaryGreen); 
-                margin-top: 10px;
-
-                @include tablet-landscape-up {
-                    margin-top: 0;
-                }
-            }
-    
-            >p {
-                @include font(1.6rem, 500, $light-100);
-    
-                &.mobileProjectDisc {
-                    display: flex;
-    
-                    @include desktop {
-                        display: none;
-                    }
-                }
-    
-                &.medPlusProjectDisc {
-                    display: none;
-                    @include desktop {
-                        display: flex;
-                    }
-                }
-            
-            }
-        }
+  .card {
+    border-radius: 0.6rem;
+    margin-bottom: 2rem;
+    background-color: $grey-350;
+    padding: 1rem;
+    .card-title {
+      @include font(1.8rem, 500, $secondaryGreen);
+      text-transform: uppercase;
     }
 
-}
+    .card-text {
+      @include font(1.6rem, 500, $light-200);
+    }
+    .skillUsed {
+      text-align: center;
+      margin: 2rem 0;
+      .bx {
+        font-size: 3.8rem;
+        margin: 0;
+        color: $grey-200;
 
+        &[data-tooltip]:hover:after {
+          content: none;
+        }
+      }
+    }
+
+    .btns {
+      text-align: center;
+
+      a {
+        font-size: 1.4rem;
+        background-color: $offset;
+        border-color: $offset-1;
+        margin: 0 0.2rem;
+
+        &:hover {
+          background-color: $offset1;
+        }
+      }
+    }
+  }
+}

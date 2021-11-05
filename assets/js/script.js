@@ -16,6 +16,7 @@ let scroll1 = window.scrollTop = 0;
 window.onscroll = function(){
     const bxIcons = document.getElementById('gitIn');
     const navigation = document.getElementById('mainNav');
+
     let scroll2 = window.pageYOffset;
     
     if(scroll1 > 300) {

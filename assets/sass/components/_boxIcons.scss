@@ -1,7 +1,7 @@
 .boxIcons {
-    width: 100%;
-    text-align: right;
-    padding: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     
     a {
         text-decoration: none;
@@ -96,15 +96,21 @@
             top: 70px;
             transition: ease-in-out top 0.25s;
         }
-        
-        .bx {
-            font-size: 4rem;
-            display: block;
-            margin: 0.5rem;
-            
-            @include desktop {
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            .bx {
                 font-size: 4rem;
+                display: block;
+                margin: 0.5rem;
+                text-decoration: none;
+                
+                @include desktop {
+                    font-size: 4rem;
+                }
             }
         }
-    }
+        }
+        
 }
