@@ -1,116 +1,111 @@
 .boxIcons {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    
-    a {
-        text-decoration: none;
-        color: $light-100;
-        
-        &:hover {
-            color: $secondaryGreen;
-            transition: ease-in-out 0.25s all;
-        }
-        
-        .bx {
-            font-size: 3rem;
-            margin-left: .5rem;
-        }
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  a {
+    text-decoration: none;
+    color: $light-100;
+
+    &:hover {
+      color: $secondaryGreen;
+      transition: ease-in-out 0.25s all;
     }
-    
-    @include tablet-landscape-up {
-        display: none;
+
+    .bx {
+      font-size: 3rem;
+      margin-left: 0.5rem;
     }
+  }
+
+  @include tablet-landscape-up {
+    display: none;
+  }
 }
 
 .bx:hover {
-    color: $secondaryGreen;
-    transition: 0.25s ease-in-out;
+  color: $offset;
+  transition: 0.25s ease-in-out;
 }
 .bx {
-    font-size: 5.4rem;
-    margin: 1.2rem;
-    
-    &[data-tooltip] {
-        position: relative;
-        justify-content: center;
-        background: none;
-        transition: 0.25s all ease-in-out;
-        
-        &:hover:after {
-            content: attr(data-tooltip);
-            position: absolute;
-            top: 100%;
-            left: -40%;
-            width: 96px;
-            margin-top: 2px;
-            padding: 2px;
-            background:#1d1d1d;
-            color: white;
-            border-radius: 4px;
-            text-align: center;
-            
-            transition: 0.25s all ease-in-out;
-            
-            font-size: 1.4rem;
-            font-family: 'Open Sans', sans-serif;
-            z-index: 1;
-        }
+  font-size: 5.4rem;
+  margin: 1.2rem;
+
+  &[data-tooltip] {
+    position: relative;
+    justify-content: center;
+    background: none;
+    transition: 0.25s all ease-in-out;
+
+    &:hover:after {
+      content: attr(data-tooltip);
+      position: absolute;
+      top: 100%;
+      left: -40%;
+      width: 96px;
+      margin-top: 2px;
+      padding: 2px;
+      background: #1d1d1d;
+      color: white;
+      border-radius: 4px;
+      text-align: center;
+
+      transition: 0.25s all ease-in-out;
+
+      font-size: 1.4rem;
+      font-family: "Open Sans", sans-serif;
+      z-index: 1;
     }
+  }
 }
 
 .projectBoxIcons {
-    position: absolute;
-    bottom: 20px;
-    width: 200px;
+  position: absolute;
+  bottom: 20px;
+  width: 200px;
 
-    .bx {
-        margin: 0;
-        font-size: 4.6rem;
+  .bx {
+    margin: 0;
+    font-size: 4.6rem;
 
-        &:hover:after {
-            top: -50%
-
-        }
+    &:hover:after {
+      top: -50%;
     }
+  }
 
-
-    @include tablet-landscape-up {
+  @include tablet-landscape-up {
     margin: 0 auto;
-    text-align: center;  
-    }
-    
+    text-align: center;
+  }
 }
 
-
 @include tablet-landscape-up {
-    #gitIn {
-        @include flexbox(space-evenly, center, row);
-        position: fixed;
-        top: 10px;
-        right: 2%;
-        width: 7%;
-        transition: ease-in-out top 0.2s;
-        
-        &.scroll {
-            top: 70px;
-            transition: ease-in-out top 0.25s;
-        }
+  #gitIn {
+    @include flexbox(space-evenly, center, row);
+    position: fixed;
+    top: 10px;
+    right: 2%;
+    width: 7%;
+    transition: ease-in-out top 0.2s;
 
-        a {
-            text-decoration: none;
-            color: inherit;
-            .bx {
-                font-size: 4rem;
-                display: block;
-                margin: 0.5rem;
-                text-decoration: none;
-                
-                @include desktop {
-                    font-size: 4rem;
-                }
-            }
+    &.scroll {
+      top: 70px;
+      transition: ease-in-out top 0.25s;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      .bx {
+        font-size: 4rem;
+        display: block;
+        margin: 0.5rem;
+        text-decoration: none;
+
+        @include desktop {
+          font-size: 4rem;
         }
-        }
-        
+      }
+    }
+  }
 }

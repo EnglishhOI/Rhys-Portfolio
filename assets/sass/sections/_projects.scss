@@ -4,9 +4,13 @@
 
   .card {
     border-radius: 0.6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     background-color: $grey-350;
     padding: 1rem;
+
+    @include tablet-landscape-up {
+      background-color: $grey-400;
+    }
     .card-title {
       @include font(1.8rem, 500, $secondaryGreen);
       text-transform: uppercase;
@@ -40,6 +44,12 @@
 
         &:hover {
           background-color: $offset1;
+        }
+
+        &.isDisabled {
+          cursor: not-allowed;
+          background-color: $offset2;
+          color:$light-300;
         }
       }
     }

@@ -103,7 +103,6 @@ main section {
     justify-content: normal;
     align-items: center;
     flex-direction: column;
-    height: 1080px;
   }
 }
 
@@ -120,15 +119,25 @@ main section .wrapper {
 @media (min-width: 900px) {
   main section .wrapper {
     padding: 2rem 10rem;
-    width: 65%;
-    box-shadow: inset 5px 5px 6px 0px #1a1a1a;
+    width: 79%;
+    box-shadow: inset 5px 5px 6px 0px #1f1f1f;
     margin-bottom: 5rem;
     border-radius: 10px;
   }
 }
 
+@media (min-width: 1280px) {
+  main section .wrapper {
+    width: 65%;
+    padding: 2rem 25rem;
+  }
+}
+
 main #projectSection .wrapper {
-  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2e2e2e;
   padding: 3rem 4rem;
 }
 
@@ -196,19 +205,6 @@ main #projectSection .wrapper {
   text-align: justify;
 }
 
-@media (min-width: 900px) {
-  #projectSection h2 {
-    margin-left: 4rem;
-  }
-}
-
-#contactSection h1 {
-  font-size: 4rem;
-  font-weight: 500;
-  color: #c4ff00;
-  text-transform: uppercase;
-}
-
 .formLabel {
   font-size: 1.6rem;
   font-weight: 500;
@@ -222,10 +218,11 @@ main #projectSection .wrapper {
   flex-direction: column;
   position: fixed;
   top: 0;
-  background-color: #333333;
+  background-color: #171717;
   color: #cccccc;
   width: 100%;
   z-index: 2;
+  box-shadow: 2px 2px 10px 0px black;
 }
 
 @media (min-width: 900px) {
@@ -236,7 +233,6 @@ main #projectSection .wrapper {
     flex-direction: row;
     position: fixed;
     top: 0;
-    box-shadow: 2px 2px 5px 0px #1a1a1a;
     transform: translateY(-70px);
     transition: all 0.2s;
     overflow: hidden;
@@ -252,7 +248,7 @@ main #projectSection .wrapper {
 #mainNav .brandTitle {
   padding: 1rem;
   width: 100%;
-  background: #333333;
+  background: #171717;
   z-index: 1;
 }
 
@@ -322,8 +318,8 @@ main #projectSection .wrapper {
   position: absolute;
   top: 56px;
   width: 100%;
-  background: #262626;
-  box-shadow: 2px 2px 10px 0px #1a1a1a;
+  background: #171717;
+  box-shadow: 2px 2px 10px 0px #1f1f1f;
   transform: translateY(-110vh);
   transition: transform 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -526,7 +522,7 @@ main #projectSection .wrapper {
 
 .boxIcons a .bx {
   font-size: 3rem;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 @media (min-width: 900px) {
@@ -536,7 +532,7 @@ main #projectSection .wrapper {
 }
 
 .bx:hover {
-  color: #e1ff80;
+  color: #dd6d40;
   transition: 0.25s ease-in-out;
 }
 
@@ -566,7 +562,7 @@ main #projectSection .wrapper {
   text-align: center;
   transition: 0.25s all ease-in-out;
   font-size: 1.4rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   z-index: 1;
 }
 
@@ -659,12 +655,6 @@ main #projectSection .wrapper {
   margin-bottom: 3rem;
 }
 
-@media (min-width: 900px) {
-  #aboutSection #skills .skills {
-    justify-content: flex-start;
-  }
-}
-
 #aboutSection #skills .future {
   color: #b3b3b3;
 }
@@ -684,9 +674,15 @@ main #projectSection .wrapper {
 
 .cardContainer .card {
   border-radius: 0.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   background-color: #262626;
   padding: 1rem;
+}
+
+@media (min-width: 900px) {
+  .cardContainer .card {
+    background-color: #1f1f1f;
+  }
 }
 
 .cardContainer .card .card-title {
@@ -732,6 +728,16 @@ main #projectSection .wrapper {
   background-color: #c75223;
 }
 
+.cardContainer .card .btns a.isDisabled {
+  cursor: not-allowed;
+  background-color: #9c401c;
+  color: #999999;
+}
+
+#contact {
+  width: 100%;
+}
+
 #contactForm {
   display: flex;
   justify-content: space-between;
@@ -741,9 +747,15 @@ main #projectSection .wrapper {
   width: 95%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 576px) {
   #contactForm {
     width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  #contactForm {
+    width: 100%;
   }
 }
 
@@ -785,12 +797,14 @@ main #projectSection .wrapper {
   border-radius: 0.5rem;
   border: none;
   outline: none;
+  transition: all 0.1s ease-in-out;
 }
 
 #contactForm input[type="text"]:focus,
 #contactForm input[type="email"]:focus,
 #contactForm textarea:focus {
-  background-color: #e1ff80;
+  background-color: #f3ffcc;
+  transition: all 0.1s ease-in-out;
 }
 
 #contactForm textarea {
@@ -841,7 +855,7 @@ main #projectSection .wrapper {
 
 .carousel button span:last-of-type {
   border-radius: 50%;
-  background-color: #1a1a1a;
+  background-color: #1f1f1f;
   padding: 10px;
   height: 20px;
   width: 20px;

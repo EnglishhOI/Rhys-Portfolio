@@ -17,7 +17,6 @@ main {
     width: 100%;
     @include tablet-landscape-up {
       @include flexbox(normal, center, column);
-      height: 1080px;
     }
 
     .wrapper {
@@ -28,18 +27,26 @@ main {
 
       @include tablet-landscape-up {
         padding: 2rem 10rem;
-        width: 65%;
+        width: 79%;
         box-shadow: inset 5px 5px 6px 0px $grey-400;
         margin-bottom: 5rem;
 
         border-radius: 10px;
+      }
+
+      @include desktop {
+        width: 65%;
+        padding: 2rem 25rem;
       }
     }
   }
 
   #projectSection {
     .wrapper {
-      background: $grey-400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $grey-300;
       padding: 3rem 4rem;
 
       @include tablet-landscape-up {

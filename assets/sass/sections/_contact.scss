@@ -1,12 +1,19 @@
-
+#contact {
+  width: 100%;
+}
 #contactForm {
   @include flexbox(space-between, flex-start, column);
   margin: 0 auto;
   width: 95%;
 
-  @include tablet-landscape-up {
+  @include lg-phone {
     width: 70%;
   }
+
+  @include tablet-landscape-up {
+    width: 100%;
+  }
+
 
   .nameEmail {
     @include flexbox(space-between, center, column);
@@ -36,8 +43,11 @@
     border: none;
     outline: none;
 
+    transition: all 0.1s ease-in-out;
+
     &:focus {
-      background-color: $secondaryGreen;
+      background-color: $lightestGreen;
+      transition: all 0.1s ease-in-out;
     }
   }
 

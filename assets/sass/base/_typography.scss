@@ -42,22 +42,6 @@
         text-align: justify;
     }  
 }
-
-#projectSection {
-    h2 {
-        @include tablet-landscape-up {
-            margin-left: 4rem;
-
-        }
-    }
-}
-
-#contactSection {
-    h1 {
-        @include font(4rem, 500, $primaryGreen);
-        text-transform: uppercase;
-    }
-}
 .formLabel {
     @include font(1.6rem, 500, $light-200);
 }
