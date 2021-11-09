@@ -19,21 +19,25 @@
                 span {
                     font-size: inherit;
                     font-weight: 700;
+                    color: $primaryGreen;
                 }
             }
 
             h3 {
-                font-size: 2.35rem;
+                text-transform: uppercase;
+                color: $light-100;
+                font-size: 2.02rem;
                 font-weight: 700;
                 line-height: 3em;
-                margin-top: 5px;
+                margin-top: -1.6rem;
+                
             }
         }
     }
 }
 
 #mobileHeader {
-    @include flexbox(center, center, row);
+    @include flexbox(center, center, column);
 
     height: 100vh;
     background: linear-gradient($light-300, $grey-350 );
@@ -43,9 +47,20 @@
 
     }
 
-    h1 {
-        @include font(10vw, 700, $primaryGreen);
+    h1,
+    h1 span  {
+        @include font(15vw, 700, $primaryGreen);
         text-transform: uppercase;
-        
+        line-height: 13vw;
+    }
+    h1 span {
+        font-weight: 500;
+        color: $light-100;
+    } 
+
+    h3{ 
+        @include font(2.42vw, 700, $light-200);
+        text-transform: uppercase;
+        margin-top: 0.4rem;
     }
 }

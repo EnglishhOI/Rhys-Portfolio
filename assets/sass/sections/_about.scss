@@ -1,4 +1,9 @@
 #aboutSection {
+  margin: 0;
+  @include tablet-landscape-up {
+    margin: 0 auto;
+  }
+
   hr {
     display: none;
 
@@ -16,19 +21,26 @@
 
   #introduction,
   #skills {
-    margin: 1rem 0;
+    padding: 0 6rem;
+    @include tablet-landscape-up {
+      padding: 0 9rem;
+    }
+  }
+
+  #introduction {
+    @include desktop {
+      border-right: 0.15rem solid $grey-400;
+    }
   }
 
   #skills {
-    h2 {
-      margin-top: 3rem;
-    }
+
+
     .skills {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-bottom: 3rem;
-
+      margin-bottom: 4rem;
     }
 
     .future {

@@ -10,15 +10,18 @@
 
 }
 
-#aboutSection h2,
-#skillsSection h2,
-#projectSection h2,
-#contactSection h2{
-    @include font(2.4rem, 700, $primaryGreen);
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    display: block;
-    text-align: center;
+#skills,
+#aboutSection,
+#skillsSection,
+#projectSection,
+#contactSection{
+    h2 {
+        @include font(3rem, 700, $primaryGreen);
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
 }
 
 

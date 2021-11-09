@@ -1,57 +1,69 @@
-.cardContainer {
-  justify-content: space-evenly;
-  height: 100%;
+#projects {
+  width: 90%;
 
-  .card {
-    border-radius: 0.6rem;
-    margin-bottom: 4rem;
-    background-color: $grey-350;
-    padding: 1rem;
+  @include desktop {
+    width: 100%;
+  }
 
-    @include tablet-landscape-up {
+  .cardContainer {
+    justify-content: space-evenly;
+    &.row {
+      margin: 0;
+    }
+  
+    .card {
+      border-radius: 0.6rem;
+      margin-bottom: 3rem;
       background-color: $grey-400;
-    }
-    .card-title {
-      @include font(1.8rem, 500, $secondaryGreen);
-      text-transform: uppercase;
-    }
-
-    .card-text {
-      @include font(1.6rem, 500, $light-200);
-    }
-    .skillUsed {
-      text-align: center;
-      margin: 2rem 0;
-      .bx {
-        font-size: 3.8rem;
-        margin: 0;
-        color: $grey-200;
-
-        &[data-tooltip]:hover:after {
-          content: none;
+      padding: 1rem;
+  
+      @include tablet-landscape-up {
+        background-color: $grey-400;
+      }
+      .card-title {
+        @include font(1.8rem, 500, $secondaryGreen);
+        text-transform: uppercase;
+      }
+  
+      .card-text {
+        @include font(1.6rem, 500, $light-200);
+      }
+      .skillUsed {
+        text-align: center;
+        margin: 2rem 0;
+        .bx {
+          font-size: 3.8rem;
+          margin: 0;
+          color: $grey-200;
+  
+          &[data-tooltip]:hover:after {
+            content: none;
+          }
         }
       }
-    }
-
-    .btns {
-      text-align: center;
-
-      a {
-        font-size: 1.4rem;
-        background-color: $offset;
-        border-color: $offset-1;
-        margin: 0 0.2rem;
-
-        &:hover {
-          background-color: $offset1;
-        }
-
-        &.isDisabled {
-          cursor: not-allowed;
-          background-color: $offset2;
-          color:$light-300;
+  
+      .btns {
+        text-align: center;
+  
+        a {
+          font-size: 1.4rem;
+          background-color: $offset;
+          border-color: $offset-1;
+          margin: 0 0.2rem;
+  
+          &:hover {
+            background-color: $offset1;
+          }
+  
+          &.isDisabled {
+            cursor: not-allowed;
+            background-color: $offset2;
+            color: $light-300;
+          }
         }
       }
     }
   }
+  
 }
+
