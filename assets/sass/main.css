@@ -115,7 +115,6 @@ main section .wrapper {
   margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 @media (min-width: 900px) {
@@ -162,6 +161,7 @@ main #projectSection .wrapper {
   color: inherit;
 }
 
+#additionalInfo h2,
 #skills h2,
 #aboutSection h2,
 #skillsSection h2,
@@ -774,28 +774,27 @@ main #projectSection .wrapper {
   color: #999999;
 }
 
-#contact {
-  width: 75%;
-}
-
 #contactForm {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  margin: 0 auto;
-  width: 95%;
+  margin: 0 auto 5rem auto;
+  width: 80%;
+  border-bottom: 0.1rem solid #171717;
 }
 
 @media (min-width: 576px) {
   #contactForm {
-    width: 70%;
+    width: 60%;
   }
 }
 
 @media (min-width: 900px) {
   #contactForm {
-    width: 100%;
+    width: 75%;
+    margin-bottom: 0;
+    border: none;
   }
 }
 
@@ -847,13 +846,17 @@ main #projectSection .wrapper {
   transition: all 0.1s ease-in-out;
 }
 
+#contactForm label {
+  color: #e1ff80;
+}
+
 #contactForm textarea {
-  height: 150px;
+  height: 15rem;
 }
 
 @media (min-width: 900px) {
   #contactForm textarea {
-    height: 250px;
+    height: 15rem;
   }
 }
 
@@ -868,6 +871,7 @@ main #projectSection .wrapper {
   text-transform: uppercase;
   margin: 2rem auto;
   border: none;
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 900px) {
@@ -878,6 +882,71 @@ main #projectSection .wrapper {
 
 #contactForm button:hover {
   background: #c75223;
+}
+
+.additionalInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-left: 0.1rem solid #171717;
+  text-align: center;
+}
+
+.additionalInfo .infoBox > p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.additionalInfo .infoBox button {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 5rem 0;
+  background-color: #dd6d40;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.additionalInfo .socialLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.additionalInfo .socialLinks h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #e1ff80;
+}
+
+.additionalInfo .socialLinks > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+  width: 25rem;
+}
+
+.additionalInfo .socialLinks > div i {
+  font-size: 4rem;
+}
+
+.additionalInfo .socialLinks > div a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #cccccc;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.additionalInfo .socialLinks > div a:hover {
+  color: #dd6d40;
+  transition: 0.2s color ease-in-out;
 }
 
 .carousel {

@@ -234,22 +234,26 @@
     <section id="contactSection">
       <a id="contactAnchor" class="anchor"></a>
 
-      <div class="wrapper">  
-        <div id="contact">
+      <div class="wrapper row">  
+        <div id="contact" class="col-xs-12 col-lg-6">
           <h2>contact</h2>
           <form action="https://usebasin.com/f/983908d4b9a7" id="contactForm" accept-charset="UTF-8" method="POST" target="_blank">
+            
+            
             <div class="nameEmail">
               <div class="formDivider">
-                <label for="name" class="formLabel" name="name">Full Name:</label>
-                <input type="text" name="name" required>
+                <label for="name" class="formLabel" name="firstname">First Name:</label>
+                <input type="text" name="firstname" required>
               </div>
               
               <div class="formDivider">
-                <label for="email" class="formLabel" name="email">Email:</label>
-                <input type="email" name="email" required>
+                <label for="name" class="formLabel" name="lastname">Last Name:</label>
+                <input type="text" name="lastname" required>
+                
               </div>
             </div>
-            
+            <label for="email" class="formLabel" name="email">Email:</label>
+            <input type="email" name="email" required>
             
             <label for="textArea" class="formLabel" name="Message">Message:</label>
             <textarea name="message" id="" rows="10" placeholder="" required></textarea>            
@@ -257,6 +261,33 @@
             
           </form>
           
+        </div>
+
+        <div class="additionalInfo col-xs-12 col-lg-6">
+          <h2>Information</h2>
+
+          <div class="infoBox">
+            <p>Blackpool, England</p>
+            <p>+44 0785896922</p>
+            <p>Rhysrichardson@outlook.com</p>
+
+            <button class="cvBtn">Click to download CV</button>
+          </div>
+            
+          <div class="socialLinks row">
+            <h3>Social Links</h3>
+              <div class="col-xs-12 col-sm-6">
+                <i class='bx bxl-twitter'></i> <a href="">@EnglishhGaming</a>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <i class='bx bxl-facebook-square' ></i><a href="">@EnglishhGaming</a>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <i class='bx bxl-linkedin-square' ></i><a href="">@EnglishhGaming</a>
+              </div>
+
+
+          </div>
         </div>
       </div>
     </section>

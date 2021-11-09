@@ -1,17 +1,20 @@
-#contact {
-  width: 75%;
-}
 #contactForm {
   @include flexbox(space-between, flex-start, column);
-  margin: 0 auto;
-  width: 95%;
+  margin: 0 auto 5rem auto;
+  width: 80%;
+
+  border-bottom: 0.1rem solid $grey-500;
 
   @include lg-phone {
-    width: 70%;
+    width: 60%;
   }
 
   @include tablet-landscape-up {
-    width: 100%;
+    width: 75%;
+    margin-bottom: 0;
+    border: none;
+  }
+  @include desktop {
   }
 
 
@@ -51,10 +54,14 @@
     }
   }
 
+  label {
+    color: $secondaryGreen;
+  }
+
   textarea {
-    height: 150px;
+    height: 15rem;
     @include tablet-landscape-up {
-      height: 250px;
+      height: 15rem;
     }
   }
 
@@ -67,6 +74,7 @@
     text-transform: uppercase;
     margin: 2rem auto;
     border: none;
+    margin-bottom: 5rem;
 
     @include tablet-landscape-up {
       width: 200px;
@@ -74,6 +82,57 @@
 
     &:hover {
       background: $offset1;
+    }
+  }
+}
+
+.additionalInfo {
+  @include flexbox(space-between, center, column);
+  border-left: 0.1rem solid $grey-500;
+  text-align: center;
+
+  .infoBox {
+    > p {
+      @include font(1.8rem, 400, $light-200);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      @include font(1.8rem, 500, #fff);
+      padding: 1rem 2rem;
+      margin: 5rem 0;
+      background-color: $offset;
+      border: none;
+      border-radius: 0.3rem;
+    }
+  }
+
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    h3 {
+      @include font(2rem, 500, $secondaryGreen);
+    }
+    > div {
+      @include flexbox(center, center, row);
+      text-align: left;
+      width: 25rem;
+
+      i {
+        font-size: 4rem;
+      }
+
+      a {
+        @include font(1.6rem, 400, $light-100);
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $offset;
+          transition: 0.2s color ease-in-out;
+        }
+      }
     }
   }
 }
