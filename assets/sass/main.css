@@ -98,7 +98,7 @@ main section {
   margin: 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   main section {
     display: flex;
     justify-content: center;
@@ -117,7 +117,7 @@ main section .wrapper {
   justify-content: center;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   main section .wrapper {
     width: 79%;
     box-shadow: inset 5px 5px 6px 0px #1f1f1f;
@@ -130,7 +130,7 @@ main #projectSection .wrapper {
   background: #2e2e2e;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   main #projectSection .wrapper {
     background: #262626;
   }
@@ -142,7 +142,7 @@ main #projectSection .wrapper {
   left: 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   .anchor {
     top: -160px;
   }
@@ -189,10 +189,24 @@ main #projectSection .wrapper {
 #aboutSection p,
 #skillsSection p {
   margin-bottom: 5rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #cccccc;
   font-weight: 500;
   text-align: justify;
+}
+
+@media (min-width: 768px) {
+  #aboutSection p,
+  #skillsSection p {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #aboutSection p,
+  #skillsSection p {
+    font-size: 2.4rem;
+  }
 }
 
 .formLabel {
@@ -215,7 +229,7 @@ main #projectSection .wrapper {
   box-shadow: 2px 2px 10px 0px black;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #mainNav {
     display: flex;
     justify-content: space-between;
@@ -242,7 +256,7 @@ main #projectSection .wrapper {
   z-index: 1;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #mainNav .brandTitle {
     box-shadow: none;
   }
@@ -261,7 +275,7 @@ main #projectSection .wrapper {
   z-index: 99;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #mainNav .toggleBtn {
     display: none;
   }
@@ -314,7 +328,7 @@ main #projectSection .wrapper {
   transition: transform 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #mainNav .navbarLinks {
     display: flex;
     justify-content: center;
@@ -349,7 +363,7 @@ main #projectSection .wrapper {
   height: 80%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #mainNav .navbarLinks .navList {
     display: flex;
     flex-direction: row;
@@ -364,7 +378,7 @@ main #projectSection .wrapper {
   list-style: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #mainNav .navbarLinks .navLinks {
     margin-left: 10px;
     text-align: center;
@@ -403,7 +417,7 @@ main #projectSection .wrapper {
   background: #cccccc;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #coverHeader .navLinksNav {
     width: 100%;
     display: block;
@@ -440,7 +454,7 @@ main #projectSection .wrapper {
   display: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #coverHeader {
     display: flex;
     justify-content: center;
@@ -484,7 +498,7 @@ main #projectSection .wrapper {
   background: linear-gradient(#999999, #262626);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #mobileHeader {
     display: none;
   }
@@ -533,7 +547,7 @@ main #projectSection .wrapper {
   margin-left: 0.5rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   .boxIcons {
     display: none;
   }
@@ -589,14 +603,14 @@ main #projectSection .wrapper {
   top: -50%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   .projectBoxIcons {
     margin: 0 auto;
     text-align: center;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #gitIn {
     display: flex;
     justify-content: space-evenly;
@@ -624,7 +638,7 @@ main #projectSection .wrapper {
   }
 }
 
-@media (min-width: 900px) and (min-width: 1200px) {
+@media (min-width: 992px) and (min-width: 1200px) {
   #gitIn a .bx {
     font-size: 4rem;
   }
@@ -634,7 +648,7 @@ main #projectSection .wrapper {
   margin: 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #aboutSection {
     margin: 0 auto;
   }
@@ -644,7 +658,7 @@ main #projectSection .wrapper {
   display: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #aboutSection hr {
     width: 64%;
     height: 2px;
@@ -659,10 +673,10 @@ main #projectSection .wrapper {
 
 #aboutSection #introduction,
 #aboutSection #skills {
-  padding: 0 6rem;
+  padding: 0 3rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #aboutSection #introduction,
   #aboutSection #skills {
     padding: 0 9rem;
@@ -719,7 +733,7 @@ main #projectSection .wrapper {
   padding: 1rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #projects .cardContainer .card {
     background-color: #1f1f1f;
   }
@@ -736,6 +750,18 @@ main #projectSection .wrapper {
   font-size: 1.6rem;
   font-weight: 500;
   color: #b3b3b3;
+}
+
+@media (min-width: 992px) {
+  #projects .cardContainer .card .card-text {
+    height: 19rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #projects .cardContainer .card .card-text {
+    height: 12rem;
+  }
 }
 
 #projects .cardContainer .card .skillUsed {
@@ -790,7 +816,7 @@ main #projectSection .wrapper {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #contactForm {
     width: 75%;
     margin-bottom: 0;
@@ -806,7 +832,7 @@ main #projectSection .wrapper {
   width: 100%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #contactForm .nameEmail {
     flex-direction: row;
     margin-bottom: 1rem;
@@ -818,7 +844,7 @@ main #projectSection .wrapper {
   width: 100%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #contactForm .nameEmail .formDivider {
     width: 45%;
   }
@@ -854,7 +880,7 @@ main #projectSection .wrapper {
   height: 15rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #contactForm textarea {
     height: 15rem;
   }
@@ -874,7 +900,7 @@ main #projectSection .wrapper {
   margin-bottom: 5rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   #contactForm button {
     width: 200px;
   }
@@ -889,8 +915,13 @@ main #projectSection .wrapper {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  border-left: 0.1rem solid #171717;
   text-align: center;
+}
+
+@media (min-width: 992px) {
+  .additionalInfo {
+    border-left: 0.1rem solid #171717;
+  }
 }
 
 .additionalInfo .infoBox > p {
@@ -915,6 +946,7 @@ main #projectSection .wrapper {
 .additionalInfo .socialLinks {
   display: flex;
   justify-content: center;
+  width: 80%;
 }
 
 .additionalInfo .socialLinks h3 {
@@ -976,7 +1008,7 @@ main #projectSection .wrapper {
   height: 600px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   .carousel .carousel-inner {
     width: 90%;
     height: 100%;

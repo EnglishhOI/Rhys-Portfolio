@@ -40,10 +40,18 @@
 
     p{
         margin-bottom: 5rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: $light-100;
         font-weight: 500;
         text-align: justify;
+
+        @include tablet-portrait-up {
+            font-size: 2rem;
+        }
+
+        @include desktop {
+            font-size: 2.4rem;
+        }
     }  
 }
 .formLabel {
