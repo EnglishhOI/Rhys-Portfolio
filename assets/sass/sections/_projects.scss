@@ -27,6 +27,14 @@
   
       .card-text {
         @include font(1.6rem, 500, $light-200);
+
+        @include tablet-landscape-up {
+          height: 19rem;
+        }
+
+        @include desktop {
+          height: 12rem;
+        }
       }
       .skillUsed {
         text-align: center;
