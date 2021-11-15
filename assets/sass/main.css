@@ -912,7 +912,7 @@ main #projectSection .wrapper {
 
 .additionalInfo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -932,15 +932,20 @@ main #projectSection .wrapper {
   margin-bottom: 1rem;
 }
 
-.additionalInfo .infoBox button {
+.additionalInfo .cvBtn {
   font-size: 1.8rem;
   font-weight: 500;
   color: #fff;
   padding: 1rem 2rem;
-  margin: 5rem 0;
+  margin: 2rem 0;
   background-color: #dd6d40;
   border: none;
   border-radius: 0.3rem;
+  text-decoration: none;
+}
+
+.additionalInfo .cvBtn:hover {
+  background-color: #dd6d40;
 }
 
 .additionalInfo .socialLinks {

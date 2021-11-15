@@ -17,7 +17,6 @@
   @include desktop {
   }
 
-
   .nameEmail {
     @include flexbox(space-between, center, column);
     width: 100%;
@@ -87,9 +86,12 @@
 }
 
 .additionalInfo {
-  @include flexbox(space-between, center, column);
-  border-left: 0.1rem solid $grey-500;
+  @include flexbox(space-evenly, center, column);
   text-align: center;
+
+  @include tablet-landscape-up {
+    border-left: 0.1rem solid $grey-500;
+  }
 
   .infoBox {
     > p {
@@ -97,23 +99,28 @@
       text-transform: uppercase;
       margin-bottom: 1rem;
     }
-
-    button {
-      @include font(1.8rem, 500, #fff);
-      padding: 1rem 2rem;
-      margin: 5rem 0;
+  }
+  .cvBtn {
+    @include font(1.8rem, 500, #fff);
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    background-color: $offset;
+    border: none;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    &:hover {
       background-color: $offset;
-      border: none;
-      border-radius: 0.3rem;
     }
   }
 
   .socialLinks {
     display: flex;
     justify-content: center;
+    width: 80%;
     h3 {
       @include font(2rem, 500, $secondaryGreen);
     }
+
     > div {
       @include flexbox(center, center, row);
       text-align: left;
