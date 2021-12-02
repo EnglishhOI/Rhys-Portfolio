@@ -877,7 +877,8 @@ main #projectSection .wrapper {
 }
 
 #contactForm textarea {
-  height: 15rem;
+  min-height: 15rem;
+  max-height: 30rem;
 }
 
 @media (min-width: 992px) {

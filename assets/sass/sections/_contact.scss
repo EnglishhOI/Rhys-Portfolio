@@ -58,7 +58,8 @@
   }
 
   textarea {
-    height: 15rem;
+    min-height: 15rem;
+    max-height: 30rem;
     @include tablet-landscape-up {
       height: 15rem;
     }
